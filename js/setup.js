@@ -14,7 +14,7 @@ console.log(getRandomNumber(0, WIZARD_SURNAMES.length));
 var userDialog = document.querySelector('.setup');
 userDialog.classList.remove('hidden');
 
-var similarListElement = userDialog.querySelector(newFunction());
+var similarListElement = userDialog.querySelector('.setup-similar-list');
 
 var similarWizardTemplate = document.querySelector('#similar-wizard-template')
     .content
@@ -51,7 +51,3 @@ for (var i = 0; i < wizards.length; i++) {
 similarListElement.appendChild(fragment);
 
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
-function newFunction() {
-    return '.setup-similar-list';
-}
-
